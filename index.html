@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@400;500&family=League+Spartan:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Credit-card</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="image">
+        <img src="./images/bg-main-desktop.png" alt="" />
+      </div>
+
+      <div id="insert-itens">
+        <div id="cardFront">
+          <img src="./images/bg-card-front.png" alt="" />
+
+          <div id="circle-card"></div>
+          <div id="circle-card-two"></div>
+          <input
+            type="number"
+            name="number-card-box"
+            id="number-card-box"
+            placeholder="0000 0000 0000 0000"
+            maxlength="16"
+          />
+          <input
+            type="text"
+            name="name-card"
+            id="name-card-box"
+            placeholder="Fernando Pessoa"
+            max="25"
+          />
+          <input
+            type="text"
+            name="valitidy-card"
+            id="valitidy-card"
+            placeholder="00/00"
+            maxlength="5"
+          />
+        </div>
+
+        <div id="cardBack">
+          <img src="./images/bg-card-back.png" alt="" />
+          <input
+            type="number"
+            name="cod-card"
+            id="cod-card"
+            placeholder="000"
+            maxlength="3"
+            minlength="3"
+          />
+        </div>
+      </div>
+
+      <div id="menu">
+        <div id="name-card-menu">
+          <label for="name-card-menu">Nome do titular</label>
+          <input
+            type="text"
+            title="0"
+            name="name-card-menu"
+            placeholder="ex Fernando Pesssoa"
+            maxlength="40"
+            minlength="5"
+          />
+        </div>
+
+        <div id="number-card-menu">
+          <label for="number-card-menu">Número do cartão</label>
+          <input
+            type="number"
+            title="Número do cartão"
+            name="number-card-menu"
+            placeholder="1234 5678 9012 8888"
+            maxlength="16"
+            min="16"
+          />
+        </div>
+
+        <div class="month-year-menu">
+
+          <div class="numbers-card-menu">
+
+            <label for="month-year">Exp.Cartão</label>
+           
+            
+            <div>
+          <input
+            type="number"
+            title="month-card"
+            name="month-year-expired"
+            placeholder="Mês"
+            maxlength="2"
+            min="1"/>
+
+            <input
+            type="number"
+            title="month-year"
+            name="month-year-expired"
+            placeholder="Ano"
+            maxlength="4"
+            minlength="4"/>
+          </div>
+        </div>
+
+          <div class="cod-card-menu">
+            <div>
+          <label for="card-cod">CVC</label>
+          <input
+            type="number"
+            title="cod-card"
+            placeholder="Código de segurança (CVV)"
+            maxlength="3"
+            minlength="3"/>
+          </div>
+        </div>
+        </div>
+        <div class="submit">
+          <button type="button" id="button">Confirmar</button>
+        </div>
+        </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>

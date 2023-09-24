@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#image {
+  display: flex;
+  max-width: 100%;
+  max-height: 100vh;
+  height: auto;
+}
+#container {
+  display: flex;
+}
+
+#cardFront {
+  margin-top: 150px;
+  position: absolute;
+  left: 150px;
+  width: 447px;
+  height: 245px;
+
+  #number-card-box {
+    display: flex;
+    margin: 0 35px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 130px;
+    transform: translateX(+80% -80%);
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-family: "Inter", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    background: none;
+    color: #fff;
+    font-size: 37px;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #fff;
+      display: block;
+    }
+  }
+
+  #name-card-box {
+    position: absolute;
+    bottom: 15px;
+    margin: 10px 30px;
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-family: "Inter", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  #circle-card {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 30px;
+    transform: translateY(-500%);
+  }
+  #circle-card-two {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 90px;
+    transform: translateY(-935%);
+  }
+
+  #valitidy-card {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    margin: 10px 30px;
+    width: 100%;
+    max-width: 45px;
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-family: "Inter", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
+
+#cardBack {
+  margin-top: 420px;
+  position: absolute;
+  left: 250px;
+  width: 447px;
+  height: 245px;
+  padding: auto;
+
+  #cod-card {
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    left: 350px;
+    padding: 4px 4px;
+    width: 100%;
+    max-width: 50px;
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-family: "Inter", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+
+  #name-card-menu {
+    padding: 10px;
+    label {
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 7px;
+      display: flex;
+    }
+    input {
+      padding: 8px 16px;
+      border-radius: 7px;
+      font-size: 16px;
+      width: 100%;
+      max-width: 100%;
+      border: solid 1px #c9c9c9;
+    }
+  }
+
+  #number-card-menu {
+    padding: 10px;
+    label {
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 7px;
+      display: flex;
+    }
+    input {
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+      max-width: 100%;
+      border: solid 1px #c9c9c9;
+    }
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  .month-year-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+
+    label {
+      display: block;
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 7px;
+    }
+    input {
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+      max-width: 50px;
+      border: solid 1px #c9c9c9;
+    }
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  .cod-card-menu {
+    padding: 0 15px;
+  }
+}
+
+.submit {
+  padding: 10px;
+
+  #button {
+    bottom: 30px;
+    padding: 12px 100px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #150115;
+    color: #c9c9c9;
+    width: 100%;
+    max-width: 300px;
+  }
+}
